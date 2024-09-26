@@ -50,7 +50,7 @@ if uploaded_file is not None:
         job_grade_distribution = df['JG'].value_counts()
 
         # Work location distribution
-        work_location_distribution = df['Worklocation'].value_counts()
+        work_location_region_distribution = df['Region'].value_counts()
 
         # Tenure Calculation: Convert 'Join Date' to datetime and calculate tenure in years
         df['Join Date'] = pd.to_datetime(df['Join Date'], errors='coerce')
