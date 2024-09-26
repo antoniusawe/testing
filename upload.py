@@ -13,7 +13,7 @@ import seaborn as sns
 st.title("Silahkan Upload Data Karyawan")
 
 # Fungsi untuk mengunggah file
-uploaded_file = st.file_uploader("Choose a file", type=["csv", "xlsx", "txt"])
+uploaded_file = st.file_uploader("Pilih File", type=["csv", "xlsx", "txt"])
 
 # Jika file sudah diunggah
 if uploaded_file is not None:
