@@ -76,7 +76,7 @@ if uploaded_file is not None:
         gender_distribution.plot(kind='bar', color=sns.color_palette("Set3"), ax=ax)
         ax.set_xlabel('Gender')
         ax.set_ylabel('Number of Employees')
-        ax.set_title('Gender Distribution')
+        # ax.set_title('Gender Distribution')
         st.pyplot(fig)
 
         # Job Grade Distribution
@@ -85,16 +85,16 @@ if uploaded_file is not None:
         job_grade_distribution.plot(kind='bar', color=sns.color_palette("Set1"), ax=ax)
         ax.set_xlabel('Job Grade')
         ax.set_ylabel('Number of Employees')
-        ax.set_title('Job Grade Distribution')
+        # ax.set_title('Job Grade Distribution')
         st.pyplot(fig)
 
         # Work Location Distribution
-        st.write("Work Location Distribution")
+        st.write("Work Location Distribution (Region)")
         fig, ax = plt.subplots()
-        work_location_distribution.plot(kind='bar', color=sns.color_palette("Set2"), ax=ax)
-        ax.set_xlabel('Work Location')
+        work_location_region_distribution.plot(kind='bar', color=sns.color_palette("Set2"), ax=ax)
+        ax.set_xlabel('Region')
         ax.set_ylabel('Number of Employees')
-        ax.set_title('Work Location Distribution')
+        # ax.set_title('Work Location Distribution')
         st.pyplot(fig)
 
         # Tenure Distribution
