@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Judul aplikasi
-st.title("File Uploader App")
+st.title("Silahkan Upload Data Karyawan")
 
 # Fungsi untuk mengunggah file
 uploaded_file = st.file_uploader("Choose a file", type=["csv", "xlsx", "txt"])
@@ -67,7 +67,7 @@ if uploaded_file is not None:
         fig, ax = plt.subplots()
         employment_status_distribution.plot(kind='pie', autopct='%1.1f%%', ax=ax, colors=sns.color_palette("Set2"))
         ax.set_ylabel('')
-        ax.set_title('Employment Status Distribution')
+        # ax.set_title('Employment Status Distribution')
         st.pyplot(fig)
 
         # Gender Distribution
